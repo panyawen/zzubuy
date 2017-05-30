@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <container path="com.genuitec.runtime.library/com.genuitec.jaxrs_jersey_1.1">
+    <jar-attrs id="lib/jersey/1.4/jersey-server-1.4.jar">
+      <attribute name="javadoc_location"/>
+      <attribute name="source-path-root"/>
+      <attribute name="source_encoding" value="UTF-8"/>
+      <attribute name="source-path" value="C:\搜狗高速下载\jersey-server-1.1.4.1-sources.jar.zip"/>
+    </jar-attrs>
+  </container>
+</project>

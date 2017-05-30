@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>zzubuy</display-name>
+  <context-param>
+    <param-name>project</param-name>
+    <param-value>zzubuy</param-value>
+  </context-param>
+  <servlet>
+    <description>JAX-RS Tools Generated - Do not modify</description>
+    <servlet-name>JAX-RS Servlet</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>SignServlet</servlet-name>
+    <servlet-class>servlet.SignServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReleaseServlet</servlet-name>
+    <servlet-class>servlet.ReleaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddInfoServlet</servlet-name>
+    <servlet-class>servlet.AddInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookUpload</servlet-name>
+    <servlet-class>servlet.BookUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>servlet.TestServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet> 
+    <description>显示图片Servlet</description>
+    <display-name>显示图片</display-name>
+    <servlet-name>ShowBookImageServlet</servlet-name>
+    <servlet-class>servlet.ShowBookImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyUploadServlet</servlet-name>
+    <servlet-class>servlet.MyUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMyBookServlet</servlet-name>
+    <servlet-class>servlet.GetMyBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateMyBookServlet</servlet-name>
+    <servlet-class>servlet.UpdateMyBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMyBookServlet</servlet-name>
+    <servlet-class>servlet.DeleteMyBookServlet</servlet-class>
+  </servlet>
+
+
+
+
+  
+
+  <servlet-mapping>
+    <servlet-name>ShowBookImageServlet</servlet-name>
+    <url-pattern>/servlet/ShowBookImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JAX-RS Servlet</servlet-name>
+    <url-pattern>/jaxrs/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignServlet</servlet-name>
+    <url-pattern>/servlet/SignServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReleaseServlet</servlet-name>
+    <url-pattern>/servlet/ReleaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddInfoServlet</servlet-name>
+    <url-pattern>/servlet/AddInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookUpload</servlet-name>
+    <url-pattern>/servlet/BookUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/servlet/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyUploadServlet</servlet-name>
+    <url-pattern>/servlet/MyUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMyBookServlet</servlet-name>
+    <url-pattern>/servlet/GetMyBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateMyBookServlet</servlet-name>
+    <url-pattern>/servlet/UpdateMyBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteMyBookServlet</servlet-name>
+    <url-pattern>/servlet/DeleteMyBookServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+    <filter-name>LoginAndSignFilter</filter-name>
+    <filter-class>filter.LoginAndSignFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>LoginAndSignFilter</filter-name>
+  	<url-pattern>/servlet/LoginServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>LoginAndSignFilter</filter-name>
+  	<url-pattern>/servlet/SignServlet</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>LoginJspFilter</filter-name>
+    <filter-class>filter.LoginJspFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>LoginJspFilter</filter-name>
+  	<url-pattern>/login.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>SellerNotExistFilter</filter-name>
+  	<filter-class>filter.SellerNotExistFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SellerNotExistFilter</filter-name>
+  	<url-pattern>/addInfo.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>CheckUserAndSellerFilter</filter-name>
+  	<filter-class>filter.CheckUserAndSellerFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CheckUserAndSellerFilter</filter-name>
+  	<url-pattern>/release.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>CheckUserAndSellerFilter</filter-name>
+  	<url-pattern>/bookUpload.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>CheckUserAndSellerFilter</filter-name>
+  	<url-pattern>/myUpload.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>CheckUserAndSellerFilter</filter-name>
+  	<url-pattern>/myBook.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>GetBookFilter</filter-name>
+  	<filter-class>filter.GetBookFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>GetBookFilter</filter-name>
+  	<url-pattern>/bookShow.jsp</url-pattern>
+  </filter-mapping>
+  
+</web-app>

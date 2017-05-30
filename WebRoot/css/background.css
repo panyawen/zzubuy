@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+body{
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+#div1{
+	text-align: right;
+}
+
+a:hover {  color: red; text-decoration: none; cursor: hand;}
+
+#release{
+	color: red;
+	text-decoration: underline;	
+}
+
+#copyrightDiv{
+	opacity: 0.3;
+	position:absolute;
+	left:40%;
+	bottom:20; 
+}
+
+#loginAgain:hover {
+	color: red; text-decoration: none
+}
+
+img:HOVER {
+	cursor: hand;
+}
