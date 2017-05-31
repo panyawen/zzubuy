@@ -1,2 +1,2 @@
-This is a java web project!
-This is a shopping platform like taobao!
+This is a java web project.
+This is a shoping platform!
